@@ -1,111 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Winter Scarves</title>
+  <title>Whitney's Winter Scarves</title>
 
   <meta charset="utf-8">
 
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
-
-  <!-- TODO: replace with your personal Font Awesome CDN link -->
-  <script src="https://use.fontawesome.com/???.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <script src="https://use.fontawesome.com/f62a024db1.js"></script>
 </head>
 
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="#">Hats</a></li>
-        <li><a href="#">Gloves</a></li>
-        <li><a href="#">Scarves</a></li>
-        <li class="cart-info">
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        </li>
-      </ul>
-    </nav>
+    <section>
+      <div class="centered">
+      <div class="branding">
+        <img src="images/logo-scarfcat-200x400.png" alt="dapper cartoon cat wearing a scarf">
+          <h1>
+            <span class="logo-w">W</span>hitney's
+            <span class="logo-w">W</span>inter
+            <span class="logo-w">W</span>ear
+          </h1>
+    </div>
+  </div>
+  </section>
 
-    <img src="images/logo-scarfcat.png" alt="dapper cartoon cat wearing a scarf">
-    <h1>
-      <span class="logo-w">W</span>inter
-      <span class="logo-w">W</span>ear
-      <span class="logo-w">W</span>arehouse
-    </h1>
+    <section class="menu-section">
+  <nav id="advanced-nav" class="advanced-nav menu" role="navigation">
+    <ul>
+      <li>
+        <a href="#">
+          <div class="icon">
+            <i class="fa fa-home"></i>
+          </div>
+          <div class="button-text">
+            Home
+            <span>is where the heart is</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="icon">
+            <i class="fa fa-thermometer-empty"></i>
+          </div>
+          <div class="button-text">
+            Hats
+            <span>keep in that heat!</span>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <div class="icon">
+            <i class="fa fa-paw"></i>
+          </div>
+          <div class="button-text">
+            Gloves
+            <span>warm paws are the best paws</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="icon">
+            <i class="fa fa-snowflake-o"></i>
+          </div>
+          <div class="button-text">
+            Scarves
+            <span>will make you purr</span>
+          </div>
+        </a>
+      </li>
+      <li class="cart-info">
+        <a href="#">
+          <div class="icon">
+            <i class="fa fa-shopping-cart"></i>
+          </div>
+          <div class="button-text">
+            Cart
+            <span>(1)</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- #advanced-nav .advanced-nav -->
+</section>
+<!-- .menu-section -->
+
+
   </header>
 
-  <main>
-    <aside>
-      <form>
-        <label>Sign up for our mailing list:
-          <input type="email" name="email">
-        </label>
 
-        <input type="submit" value="Submit">
-      </form>
-    </aside>
+    <main class="main-area">
+        <div class="centered">
+          <section class="item-containers">
+        <article class="item-container">  <!--originally class called "card"-->
+          <a href="#">
+            <picture class="thumbnail">
+              <img src="images/reversible-plaid500x700.jpg" alt="reversible plaid scarf">
+            </picture>
+            <div class="item-description">
+              <h2>Reversible Plaid</h2>
+              <p>Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.</p>
+              <p class="price">26.99</p>
+            </div><!-- item-desciption -->
+          </a>
+        </article><!-- .item-container-->
+        <article class="item-container">  <!--originally class called "card"-->
+          <a href="#">
+            <picture class="thumbnail">
+              <img src="images/wool-cable500x700.jpg" alt="wool cable knit scarf">
+            </picture>
+            <div class="item-description">
+              <h2>Wool Cable Knit</h2>
+              <p>Warm yourself with this women's natural cable knit scarf, crafted from 100% Merino wool. Imported.</p>
+              <p class="price">49.99</p>
+            </div><!-- item-desciption -->
+          </a>
+        </article><!-- .item-container-->
 
-    <section>
-      <h2>Scarves</h2>
+        <article class="item-container">  <!--originally class called "card"-->
+          <a href="#">
+            <picture class="thumbnail">
+              <img src="images/fringed-plaid500x700.jpg" alt="fringed plaid scarf">
+            </picture>
+            <div class="item-description">
+              <h2>Fringed Plaid</h2>
+              <p>Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
+              <p class="price">18.99</p>
+            </div><!-- item-desciption -->
+          </a>
+        </article><!-- .item-container-->
+        <article class="item-container">  <!--originally class called "card"-->
+          <a href="#">
+            <picture class="thumbnail">
+              <img src="images/multi-color500x700.jpg" alt="multi color scarf">
+            </picture>
+            <div class="item-description">
+              <h2>Multi Color</h2>
+              <p>The Who What Where Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic.</p>
+              <p class="price">22.99</p>
+            </div><!-- item-desciption -->
+          </a>
+        </article><!-- .item-container-->
+        <article class="item-container">  <!--originally class called "card"-->
+          <a href="#">
+            <picture class="thumbnail">
+              <img src="images/northern-lights500x700.jpg" alt="northern lights scarf">
+            </picture>
+            <div class="item-description">
+              <h2>Northern Lights</h2>
+              <p>Handmade by women in Agra, sales provide medical and educational support in this remote area of India. Crinkly 100% cotton.</p>
+              <p class="price">29.99</p>
+            </div><!-- item-desciption -->
+          </a>
+        </article><!-- .item-container-->
+        <article class="item-container">  <!--originally class called "card"-->
+          <a href="#">
+            <picture class="thumbnail">
+              <img src="images/ombre-infinity500x700.jpg" alt="ombre infinity scarf">
+            </picture>
+            <div class="item-description">
+              <h2>Ombre Infinity</h2>
+              <p>A dip-dye effect adds color and dimension to a cozy infinity scarf featuring a soft, chunky knit. 100% acrylic.</p>
+              <p class="price">11.99</p>
+            </div><!-- item-desciption -->
+          </a>
+        </article><!-- .item-container-->
+        <article class="item-container">  <!--originally class called "card"-->
+          <a href="#">
+            <picture class="thumbnail">
+              <img src="images/twill500x700.jpg" alt="ashby twill scarf">
+            </picture>
+            <div class="item-description">
+              <h2>Ashby Twill</h2>
+              <p>Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool.</p>
+              <p class="price">70.99</p>
+            </div><!-- item-desciption -->
+          </a>
+        </article><!-- .item-container-->
 
-      <div class="item-container">
-        <div>
-          <h3>Reversible Plaid</h3>
-          <img src="images/reversible-plaid.jpg" alt="reversible plaid scarf">
-          <p>Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.</p>
-          <p>26.99</p>
-        </div>
+        <article class="item-container">  <!--originally class called "card"-->
+          <a href="#">
+            <picture class="thumbnail">
+              <img src="images/etro500x700.jpg" alt="etro paisley print scarf">
+            </picture>
+            <div class="item-description">
+              <h2>Etro Paisley-Print Silk</h2>
+              <p>Luxurious silk scarf with subtle paisley pattern. 100% silk.</p>
+              <p>26.99</p>
+            </div><!-- item-desciption -->
+          </a>
+        </article><!-- .item-container-->
+        <article class="item-container">  <!--originally class called "card"-->
+          <a href="#">
+            <picture class="thumbnail">
+              <img src="images/wool-cable500x700.jpg" alt="fringed plaid scarf">
+            </picture>
+            <div class="item-description">
+              <h2>Fringed Plaid</h2>
+              <p>Warm yourself with this women's natural cable knit scarf, crafted from 100% Merino wool. Imported.</p>
+              <p>49.99</p>
+            </div><!-- item-desciption -->
+          </a>
+        </article><!-- .item-container-->
 
-        <div>
-          <h3>Fringed Plaid</h3>
-          <img src="images/fringed-plaid.jpeg" alt="fringed plaid scarf">
-          <p>Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
-          <p>18.99</p>
-        </div>
-
-        <div>
-          <h3>Multi Color</h3>
-          <img src="images/multi-color.jpeg" alt="multi color scarf">
-          <p>The Who What Where Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic.</p>
-          <p>22.99</p>
-        </div>
-
-        <div>
-          <h3>Northern Lights</h3>
-          <img src="images/northern-lights.jpg" alt="northern lights scarf">
-          <p>Handmade by women in Agra, sales provide medical and educational support in this remote area of India. Crinkly 100% cotton.</p>
-          <p>29.99</p>
-        </div>
-
-        <div>
-          <h3>Ombre Infinity</h3>
-          <img src="images/ombre-infinity.jpg" alt="ombre infinity scarf">
-          <p>A dip-dye effect adds color and dimension to a cozy infinity scarf featuring a soft, chunky knit. 100% acrylic.</p>
-          <p>11.99</p>
-        </div>
-
-        <div>
-          <h3>Ashby Twill</h3>
-          <img src="images/twill.jpg" alt="ashby twill scarf">
-          <p>Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool.</p>
-          <p>70.99</p>
-        </div>
-
-        <div>
-          <h3>Wool Cable Knit</h3>
-          <img src="images/wool-cable.jpeg" alt="wool cable knit scarf">
-          <p>Warm yourself with this women's natural cable knit scarf, crafted from 100% Merino wool. Imported.</p>
-          <p>49.99</p>
-        </div>
-
-        <div>
-          <h3>Etro Paisley-Print Silk</h3>
-          <img src="images/etro.png" alt="etro paisley print silk scarf">
-          <p>Luxurious silk scarf with subtle paisley pattern. 100% silk.</p>
-          <p>26.99</p>
-        </div>
-
-      </div>
+      <aside>
+        <form name="customerInfo" onsubmit = "capture();">
+          <label>Sign up for our mailing list:
+            <input type="email" name="email">
+          </label>
+          <input type="submit" value="Submit">
+        </form>
+      </aside>
     </section>
+  </div>
   </main>
   <script type="text/javascript" src="js/script.js"></script>
 </body>

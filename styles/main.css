@@ -11,24 +11,112 @@ p {
 
 /* TODO: size images manually so this is not necessary */
 img {
-  max-height: 20rem;
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
 }
+
+
 
 /***************** NAV *****************/
-
-nav a:hover {
-  text-decoration: underline;
+/* Base styles that apply to all menus */
+.menu-section {
+	margin-bottom: 1em;
 }
+
+.menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	background: #4e75c6;
+}
+
+.menu li a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: .6em 1em;
+}
+
+.menu li a:hover {
+	background: hsl(0, 0%, 25%);
+}
+
+/* Styles for Advanced Menu */
+
+.advanced-nav li a {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.icon {
+    flex: 0 0 1.5em;
+    font-size: 1.8em;
+}
+
+.button-text {
+    font-size: 1.8em;
+    font-family: 'Indie Flower', cursive;
+
+}
+
+.button-text span {
+    display: block;
+    font-size: 50%;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+@media screen and (min-width: 30em) {
+
+    .advanced-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .advanced-nav li {
+        display: flex;
+        flex: 1 0 12em;
+    }
+
+}
+
 
 /**************** HERO *****************/
+.branding{
+  display: inline-flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
 
 header img {
-  max-height: 6rem;
+  max-width: 6rem;
+  padding:0 .75em;
 }
-
+.branding h1{
+  font-family: 'Indie Flower', cursive;
+  font-size:2em
+}
 h1 .logo-w {
   font-size: 3.5rem;
+  font-family: 'Indie Flower', cursive;
 }
+
+@media screen and (max-width: 600px) {
+  header img {
+    max-width: 2.5rem;
+  }
+  .button-text span{display:none;}
+  .branding h1{font-size:1.5em;}
+  .branding{justify-content: left;}
+}
+
+
 
 /**************** ASIDE ****************/
 
@@ -43,19 +131,110 @@ input[type="submit"] {
 
 /*********** PRODUCTS SECTION ***********/
 
-section {
-  padding: 0 .75rem;
+/*--------------------------------------------------------------
+Layouts
+--------------------------------------------------------------*/
+
+.main-area {
+    padding: 2em;
+}
+.centered {
+    margin: 0 auto;
+    padding: 0 1em;
 }
 
-h2 {
-  padding-top: 1.5rem;
-  font-size: 2rem;
-  text-align: center;
-  color: #2d2d2d;
+@media screen and (min-width: 52em) {
+    .centered {
+        max-width: 52em;
+    }
+}
+
+section {
+  padding: 0 .75rem;
 }
 
 h3 {
   font-size: 1.2rem;
   text-align: center;
   color: #2d2d2d;
+}
+
+/* item-container Based Layout - Base styles */
+
+body {
+	background: hsl(0, 0%, 90%);
+}
+
+.masthead {
+	background: hsl(0, 0%, 20%);
+}
+
+.site-title {
+	color: white;
+}
+
+.item-container {
+	background: white;
+	margin-bottom: 2em;
+}
+
+.item-container a {
+	color: black;
+	text-decoration: none;
+}
+
+.item-container a:hover {
+	box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+}
+
+.item-description {
+	padding: 1.4em;
+}
+
+.item-description h2 {
+	margin-top: 0;
+	margin-bottom: .5em;
+	font-weight: normal;
+  font-family: 'Indie Flower', cursive;
+  font-size:1.8em;
+}
+
+.item-description p {
+	font-size: 95%;
+  line-height:1.25em;
+}
+
+.item-description p.price {
+    font-family: 'Indie Flower', cursive;
+    line-height: 2.25em;
+    font-size: 2em;
+    text-align: right;
+}
+
+/* Flexbox stuff */
+
+@media screen and (min-width: 40em) {
+    .item-containers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: -1em;
+    }
+
+    .item-container {
+        display: flex;
+        flex: 0 1 calc(50% - .5em);
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .item-containers {
+        margin-top: inherit;
+    }
+
+    .item-container {
+        flex: 0 1 calc(33% - 1em);
+        margin-bottom: 2em;
+    }
 }
