@@ -1,4 +1,15 @@
 # Read Me - Testing Steps
+Tested on Devices:
+Mobile: Android Samsung Galaxy S5
+Tablet: Ipad mini
+
+Tested in Browsers:
+Chrome - Good
+Firefox - Good
+IE - Good
+
+No Major errors reported in JS validation
+
 
 # Description
 
