@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="styles/main.css">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <script src="https://use.fontawesome.com/f62a024db1.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
 
 <body>
@@ -74,14 +75,13 @@
           </div>
         </a>
       </li>
-      <li class="cart-info">
-        <a href="#">
+      <li class="cart-info" id="top-link">
+        <a href="#cart-link">
           <div class="icon">
             <i class="fa fa-shopping-cart"></i>
           </div>
           <div class="button-text">
-            Cart
-            <span>(1)</span>
+            Cart (<count id="count-cart" >0</count>)
           </div>
         </a>
       </li>
@@ -94,10 +94,10 @@
 
   </header>
 
-
-    <main class="main-area">
-        <div class="centered">
-          <section class="item-containers">
+<section>
+    <div class="main-area">
+        <!--<div class="centered">-->
+          <div class="item-containers">
         <article class="item-container">  <!--originally class called "card"-->
           <a href="#">
             <picture class="thumbnail">
@@ -106,8 +106,12 @@
             <div class="item-description">
               <h2>Reversible Plaid</h2>
               <p>Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.</p>
-              <p class="price">26.99</p>
             </div><!-- item-desciption -->
+            <div class="item-price-button">
+              <p class="price">26.99</p>
+              <button class="add-to-cart" href="#" data-name="Reversible Plaid" data-price="26.99">Add to Cart</button>
+              <a href="#cart-link" alt="Go to Cart"><button class="go-to-cart"><i class="fa fa-shopping-cart"></i></button></a>
+            </div>
           </a>
         </article><!-- .item-container-->
         <article class="item-container">  <!--originally class called "card"-->
@@ -118,8 +122,12 @@
             <div class="item-description">
               <h2>Wool Cable Knit</h2>
               <p>Warm yourself with this women's natural cable knit scarf, crafted from 100% Merino wool. Imported.</p>
-              <p class="price">49.99</p>
             </div><!-- item-desciption -->
+            <div class="item-price-button">
+              <p class="price">49.99</p>
+              <button class="add-to-cart" href="#" data-name="Wool Cable Knit" data-price="49.99">Add to Cart</button>
+              <a href="#cart-link" alt="Go to Cart"><button class="go-to-cart"><i class="fa fa-shopping-cart"></i></button></a>
+            </div>
           </a>
         </article><!-- .item-container-->
 
@@ -131,8 +139,12 @@
             <div class="item-description">
               <h2>Fringed Plaid</h2>
               <p>Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
-              <p class="price">18.99</p>
             </div><!-- item-desciption -->
+            <div class="item-price-button">
+              <p class="price">18.99</p>
+              <button class="add-to-cart" href="#" data-name="Fringed Plaid" data-price="18.99">Add to Cart</button>
+              <a href="#cart-link" alt="Go to Cart"><button class="go-to-cart"><i class="fa fa-shopping-cart"></i></button></a>
+            </div>
           </a>
         </article><!-- .item-container-->
         <article class="item-container">  <!--originally class called "card"-->
@@ -142,9 +154,13 @@
             </picture>
             <div class="item-description">
               <h2>Multi Color</h2>
-              <p>The Who What Where Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic.</p>
+              <p>All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic.</p>
+              </div><!-- item-desciption -->
+            <div class="item-price-button">
               <p class="price">22.99</p>
-            </div><!-- item-desciption -->
+              <button class="add-to-cart" href="#" data-name="Multi Color" data-price="22.99">Add to Cart</button>
+              <a href="#cart-link" alt="Go to Cart"><button class="go-to-cart"><i class="fa fa-shopping-cart"></i></button></a>
+            </div>
           </a>
         </article><!-- .item-container-->
         <article class="item-container">  <!--originally class called "card"-->
@@ -155,8 +171,12 @@
             <div class="item-description">
               <h2>Northern Lights</h2>
               <p>Handmade by women in Agra, sales provide medical and educational support in this remote area of India. Crinkly 100% cotton.</p>
-              <p class="price">29.99</p>
             </div><!-- item-desciption -->
+            <div class="item-price-button">
+              <p class="price">29.99</p>
+              <button class="add-to-cart" href="#" data-name="Northern Lights" data-price="29.99">Add to Cart</button>
+              <a href="#cart-link" alt="Go to Cart"><button class="go-to-cart"><i class="fa fa-shopping-cart"></i></button></a>
+            </div>
           </a>
         </article><!-- .item-container-->
         <article class="item-container">  <!--originally class called "card"-->
@@ -167,8 +187,12 @@
             <div class="item-description">
               <h2>Ombre Infinity</h2>
               <p>A dip-dye effect adds color and dimension to a cozy infinity scarf featuring a soft, chunky knit. 100% acrylic.</p>
-              <p class="price">11.99</p>
             </div><!-- item-desciption -->
+            <div class="item-price-button">
+              <p class="price">11.99</p>
+              <button class="add-to-cart" href="#" data-name="Ombre Infinity" data-price="11.99">Add to Cart</button>
+              <a href="#cart-link" alt="Go to Cart"><button class="go-to-cart"><i class="fa fa-shopping-cart"></i></button></a>
+            </div>
           </a>
         </article><!-- .item-container-->
         <article class="item-container">  <!--originally class called "card"-->
@@ -179,8 +203,12 @@
             <div class="item-description">
               <h2>Ashby Twill</h2>
               <p>Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool.</p>
-              <p class="price">70.99</p>
             </div><!-- item-desciption -->
+            <div class="item-price-button">
+              <p class="price">70.99</p>
+              <button class="add-to-cart" href="#" data-name="Ashby Twill" data-price="18.99">Add to Cart</button>
+              <a href="#cart-link" alt="Go to Cart"><button class="go-to-cart"><i class="fa fa-shopping-cart"></i></button></a>
+            </div>
           </a>
         </article><!-- .item-container-->
 
@@ -192,34 +220,58 @@
             <div class="item-description">
               <h2>Etro Paisley-Print Silk</h2>
               <p>Luxurious silk scarf with subtle paisley pattern. 100% silk.</p>
-              <p>26.99</p>
             </div><!-- item-desciption -->
-          </a>
-        </article><!-- .item-container-->
-        <article class="item-container">  <!--originally class called "card"-->
-          <a href="#">
-            <picture class="thumbnail">
-              <img src="images/wool-cable500x700.jpg" alt="fringed plaid scarf">
-            </picture>
-            <div class="item-description">
-              <h2>Fringed Plaid</h2>
-              <p>Warm yourself with this women's natural cable knit scarf, crafted from 100% Merino wool. Imported.</p>
-              <p>49.99</p>
-            </div><!-- item-desciption -->
+            <div class="item-price-button">
+              <p class="price">26.99</p>
+              <button class="add-to-cart" href="#" data-name="Etro Paisley-Print Silk" data-price="26.99">Add to Cart</button>
+              <a href="#cart-link" alt="Go to Cart"><button class="go-to-cart"><i class="fa fa-shopping-cart"></i></button></a>
+            </div>
           </a>
         </article><!-- .item-container-->
 
-      <aside>
-        <form name="customerInfo" onsubmit = "capture();">
-          <label>Sign up for our mailing list:
-            <input type="email" name="email">
-          </label>
-          <input type="submit" value="Submit">
-        </form>
-      </aside>
-    </section>
+        <article class="item-container">  <!--originally class called "card"-->
+          <a href="#">
+            <picture class="thumbnail">
+              <img src="images/etro500x700.jpg" alt="etro paisley print scarf">
+            </picture>
+            <div class="item-description">
+              <h2>Etro Paisley-Print Silk</h2>
+              <p>Luxurious silk scarf with subtle paisley pattern. 100% silk.</p>
+            </div><!-- item-desciption -->
+            <div class="item-price-button">
+              <p class="price">26.99</p>
+              <button class="add-to-cart" href="#" data-name="Etro Paisley-Print Silk" data-price="26.99">Add to Cart</button>
+              <a href="#cart-link" alt="Go to Cart"><button class="go-to-cart"><i class="fa fa-shopping-cart"></i></button></a>
+            </div>
+          </a>
+        </article><!-- .item-container-->
+
+    </div>
   </div>
-  </main>
+<!--</div>-->
+  <div id="cart-link" class="shopping-cart-area">
+        <div class="centered">
+          <h2>Shopping Cart</h2>
+            <ul id="show-cart">
+              <li>?????</li>
+              <!-- -->
+            </ul>
+            <div class="cart-total">$ <span id="total-cart"></span></div>
+            <button id="clear-cart" type="button" name="button"><i class="fa fa-times-circle-o" aria-hidden="true"></i> Clear Cart</button>
+             <a href="#top-link" alt="Back to Top"><button class="back-to-top" type="button" name="button"><i class="fa fa-arrow-up" aria-hidden="true"></i> Top</button></a>
+        </div>
+  </div><!--end side bar-->
+
+<div class="newsletter">
+    <form name="customerInfo" onsubmit = "capture();">
+      <label>Sign up for our mailing list:
+        <input type="email" name="email">
+      </label>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+</section><!--end wrapper-->
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

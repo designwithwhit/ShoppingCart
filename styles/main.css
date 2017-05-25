@@ -13,9 +13,9 @@ p {
 img {
     display: block;
     border: 0;
-    width: 100%;
+    width: 75%;
     height: auto;
-}
+    margin:0 auto;}
 
 
 
@@ -118,17 +118,21 @@ h1 .logo-w {
 
 
 
-/**************** ASIDE ****************/
+/**************** Newsletter ****************/
 
 input[type="submit"] {
   padding: .25rem;
   background-color: #3D7FCF;
-  border: 1px solid #3D7FCF;
-  border-radius: 5px;
-  font-size: .75rem;
+  font-size: 1rem;
   color: white;
+    font-family: 'Indie Flower', cursive;
 }
-
+.newsletter {
+  clear:both;
+}
+.newsletter form{
+  padding: 1.5em 0;
+}
 /*********** PRODUCTS SECTION ***********/
 
 /*--------------------------------------------------------------
@@ -136,7 +140,30 @@ Layouts
 --------------------------------------------------------------*/
 
 .main-area {
-    padding: 2em;
+  float:left;
+  width:70%;
+  /*padding: 2em;*/
+}
+
+.shopping-cart-area h2{
+  font-family: 'Indie Flower', cursive;
+    font-size: 1.5em;
+    padding:.25em;
+}
+
+.shopping-cart-area {
+  float:right;
+  width:28.5%;
+  padding: 1em 0;
+  /*margin:2em;*/
+  background-color:#4e75c6;
+}
+
+
+.shopping-cart-area ul li{
+  padding:2em;
+  margin-bottom: .5em;
+  background-color:#fafafa;
 }
 .centered {
     margin: 0 auto;
@@ -145,7 +172,7 @@ Layouts
 
 @media screen and (min-width: 52em) {
     .centered {
-        max-width: 52em;
+        max-width: 70em;
     }
 }
 
@@ -178,17 +205,20 @@ body {
 	margin-bottom: 2em;
 }
 
+
+
 .item-container a {
 	color: black;
 	text-decoration: none;
 }
 
-.item-container a:hover {
+button:hover {
 	box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
 }
 
 .item-description {
 	padding: 1.4em;
+  height:7em;
 }
 
 .item-description h2 {
@@ -204,37 +234,117 @@ body {
   line-height:1.25em;
 }
 
-.item-description p.price {
+.item-price-button p.price {
     font-family: 'Indie Flower', cursive;
     line-height: 2.25em;
     font-size: 2em;
     text-align: right;
 }
+.item-price-button{
+  padding:1.4em;
+}
+
+button.add-to-cart{
+width: 70%;
+padding: .25em;
+background-color: #4eb1c6;
+color: white;
+font-family: 'Indie Flower', cursive;
+font-size: 1.5em;
+}
+
+button.go-to-cart{
+width: 28%;
+padding: .25em;
+background-color: #d9b354;
+color: white;
+font-family: 'Indie Flower', cursive;
+font-size: 1.5em;
+}
+button.plus-item, button.subtract-item, button.delete-item{
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5em;
+}
+
+button.plus-item{
+    background-color: #d9b354;
+}
+button.subtract-item{
+    background-color: #4eb1c6;
+}
+button.delete-item{
+    background-color: #ccc;
+}
+button#clear-cart, button.back-to-top{
+  color: #000;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.25em;
+  margin-top:.25em;
+}
+
+.cart-total{
+color: white;
+font-family: 'Indie Flower', cursive;
+font-size: 2.5em;
+background-color:#333;
+padding: 0.5em;
+text-align:right;
+}
+
+
+
+.cart-item-name {
+  font-family: 'Indie Flower', cursive;
+  font-size:1.3em;
+}
 
 /* Flexbox stuff */
+@media screen and (max-width: 30em) {
+  .main-area{
+    width: 100%;
+    float:none;
+  }
+  .shopping-cart-area{
+    float:none;
+    width:100%;
+  }
+}
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 31em) and (max-width:60em) {
     .item-containers {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-top: -1em;
+        margin-top: inherit;
     }
-
     .item-container {
-        display: flex;
-        flex: 0 1 calc(50% - .5em);
-        margin-bottom: 1em;
+        flex: 0 1 calc(50% - 1em);
+        margin-bottom: 2em;
+    }
+    .main-area{
+      width: 100%;
+      float:none;
+    }
+    .shopping-cart-area{
+      float:none;
+      width:100%;
     }
 }
 
-@media screen and (min-width: 60em) {
-    .item-containers {
-        margin-top: inherit;
-    }
+@media screen and (min-width: 61em) {
+  .item-containers {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: inherit;
+  }
 
     .item-container {
         flex: 0 1 calc(33% - 1em);
         margin-bottom: 2em;
     }
+button.back-to-top{
+  display:none;
+}
 }
