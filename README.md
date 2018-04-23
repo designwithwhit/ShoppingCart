@@ -1,7 +1,7 @@
 # Shopping cart
 [View Shopping Cart](https://designwithwhit.github.io/ShoppingCart/)
 
-# Read Me - Testing Steps
+# Read Me - Testing Steps - Whitney Was Here!!
 Tested on Devices:
 Mobile: Android Samsung Galaxy S5
 Tablet: Ipad mini
