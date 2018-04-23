@@ -1,5 +1,5 @@
 # Shopping cart
-[View Shopping Cart(https://designwithwhit.github.io/ShoppingCart/)
+[View Shopping Cart] (https://designwithwhit.github.io/ShoppingCart/)
 
 # Read Me - Testing Steps
 Tested on Devices:
